@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: OpenSans;
-  src: url(font/Open_Sans/OpenSans-VariableFont_wdth\wght.ttf);
+  src: url(font/Open_Sans/OpenSans.ttf);
 }
 
 :root {
@@ -27,6 +27,8 @@ h3 {
 }
 
 h1 {
+  margin: 0;
+  padding: 0;
   font-size: 72px;
 }
 
@@ -38,32 +40,67 @@ h3 {
   font-size: 34px;
 }
 
+.hello {
+  display: block;
+  color: var(--white);
+}
+
 body {
-  width: 1440px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
   font-family: OpenSans;
   font-size: 16px;
   line-height: 160%;
   color: var(--dark);
 }
 
+.name {
+  margin: 0px;
+}
+
 .name-primary {
   color: var(--primary);
 }
 
-.hello {
-  display: block;
-  color: var(--white);
-}
-
 .page {
-  width: 1440px;
+  position: relative;
+  width: 100%;
   height: 914px;
 }
 
-.page1 {
+.bgim::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  opacity: 0.1;
   background: url(image/background.png), lightgray 50% / cover no-repeat;
 }
 
 .image1 {
-  background: url(image/main.png), lightgray 50% / cover no-repeat;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  height: 525px;
+  top: 55px;
+  right: -255px;
+}
+
+.border {
+  padding-top: 100px;
+  width: 1140px;
+  margin: auto;
+}
+
+.text {
+  position: relative;
+  display: inline-flex;
+  margin-top: 185px;
+  width: 540px;
+}
+.text1 {
+  margin-right: 30px;
 }

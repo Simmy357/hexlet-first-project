@@ -1,11 +1,58 @@
-.hello {
-  display: block;
+@font-face {
+  font-family: Neucha;
+  src: url(font/neucha/Neucha-Regular.ttf);
+}
 
-  color: #fff;
+@font-face {
+  font-family: OpenSans;
+  src: url(font/Open_Sans/OpenSans-VariableFont_wdth\wght.ttf);
+}
+
+:root {
+  --primary: #fe8a02;
+  --white-50: #d7ccc0;
+  --primary-dark: #42413c;
+  --brown: #b09a81;
+  --dark-50: #908d8b;
+  --dark: #2a2626;
+  --light: #f5f4f0;
+  --white: #fff;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Neucha;
+  line-height: 120%;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
 }
 
 body {
   width: 1440px;
+  font-family: OpenSans;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--dark);
+}
+
+.name-primary {
+  color: var(--primary);
+}
+
+.hello {
+  display: block;
+  color: var(--white);
 }
 
 .page {
@@ -15,4 +62,8 @@ body {
 
 .page1 {
   background: url(image/background.png), lightgray 50% / cover no-repeat;
+}
+
+.image1 {
+  background: url(image/main.png), lightgray 50% / cover no-repeat;
 }

@@ -1,0 +1,14 @@
+.hello {
+  display: block;
+
+  color: #fff;
+}
+
+body {
+  width: 1440px;
+}
+
+.page {
+  width: 1440px;
+  height: 914px;
+}

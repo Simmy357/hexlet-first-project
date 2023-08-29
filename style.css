@@ -49,7 +49,29 @@ h2 {
 }
 
 h3 {
+  color: var(--text, #2a2626);
+  font-family: Neucha;
   font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2; /* 120% */
+}
+
+h4 {
+  font-family: Neucha;
+  color: var(--dark-50);
+  margin: 0;
+  font-size: 24px;
+}
+
+h5 {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .hello {
@@ -207,4 +229,64 @@ body {
 .navigation-block__info {
   margin: 16px 24px 0;
   color: var(--dark);
+}
+
+.box-shadow {
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.15);
+}
+.image-effect-ikea {
+  vertical-align: middle;
+  position: absolute;
+  left: 0;
+}
+
+.main-column {
+  column-count: 2;
+}
+
+.theme {
+  margin-left: 30px;
+}
+
+.theme-info {
+  margin-top: 30px;
+}
+
+.page__light {
+  background: var(--light);
+}
+
+.desc-name {
+  margin: 100px 0 20px;
+  background-color: var(--brown);
+  height: 26px;
+}
+.desc-name > h5 {
+  padding: 5px;
+}
+
+.desc > p {
+  margin: 0;
+  padding: 0;
+}
+
+.page__brown {
+  background-color: var(--brown);
+}
+
+.white,
+.desc__white {
+  color: var(--white);
+}
+
+.white-50 {
+  color: var(--white-50);
+}
+
+.brown {
+  color: var(--brown);
+}
+
+.bg__white {
+  background-color: var(--white);
 }

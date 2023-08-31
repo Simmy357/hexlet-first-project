@@ -17,6 +17,7 @@
   --dark: #2a2626;
   --light: #f5f4f0;
   --white: #fff;
+  box-sizing: border-box;
 }
 
 .text--primary {
@@ -54,7 +55,7 @@ h3 {
   font-size: 34px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.2; /* 120% */
+  line-height: 1.2;
 }
 
 h4 {
@@ -90,7 +91,7 @@ body {
 }
 
 .page__name {
-  margin-bottom: 185px;
+  margin-bottom: 195px;
 }
 
 .page__name > h1 {
@@ -124,8 +125,8 @@ body {
   padding: 0;
   position: absolute;
   height: 525px;
-  top: 55px;
-  right: -270px;
+  top: 30px;
+  right: -290px;
 }
 
 .main {
@@ -174,7 +175,9 @@ body {
 }
 
 .video-section {
-  margin-top: 30px;
+  margin: 30px 0 0;
+  padding: 0;
+  z-index: 1;
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
@@ -301,4 +304,98 @@ body {
 
 .image {
   overflow: hidden;
+}
+
+footer {
+  height: 580px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.subscripe {
+  color: var(--white);
+  position: relative;
+  display: flex;
+  height: 190px;
+  background-color: var(--primary-dark);
+  margin-bottom: 75px;
+}
+
+.subs-rule,
+.subs-rule a {
+  margin: 0;
+  color: var(--white);
+  font-size: 12px;
+}
+.subs-text {
+  margin: 0;
+  padding: 55px 170px 55px 55px;
+  font-family: Neucha;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+input {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  font-size: 16px;
+  width: 420px;
+  height: 50px;
+}
+input:focus {
+  border-radius: 0;
+}
+label {
+  color: var(--white);
+  font-family: OpenSans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+::placeholder {
+  padding: 15px;
+  opacity: 0.2;
+}
+
+button {
+  border: 0;
+  width: 70px;
+  height: 50px;
+  background-color: var(--primary);
+  background-image: url(./image/send.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.production {
+  color: var(--dark);
+  text-align: center;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.production a {
+  color: #1085c5;
+  text-align: center;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  text-decoration-line: underline;
+}
+
+.input {
+  display: flex;
 }
